@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+</head>
+<form>
+<body>
+    <fieldset>
+<h2>CAMBIO DE TITULARIDAD Y NOTIFICACION DE VENTA DE VEHICULOS</h2>
+</fieldset>
+
+<fieldset>
+    <label for="cati">Cambio de Titutlar</label>
+    <input type="radio" id="cati" name="motivo" value="cambiotitular">
+
+    <label for="nove">Notificación de Venta</label>
+    <input type="radio" id="nove" name="motivo" value="notificacioventa">
+</fieldset>
+<fieldset>
+<h2>DATOS DEL VEHICULO (Domicilio de empadronamiento del comprador del vehiculo)</h2>
+    
+    <label for="matricula">Matricula:</label>
+    <input type="text" id="matricula" name="matricula">
+
+    <label for="fema">Fecha de Matriculacion:</label>
+    <input type="date" id="fema" name="fechamatriculacion">
+
+    <label for="dest">Servicio al cual se destina el Vehiculo</label>
+    <select id="dest">
+        <option  value="ba">A-00 Publico Sin especificar</option>
+        <option  value="tr">A-01 Alquiler SIN conductor</option>
+        <option  value="pa">A-02 Alquiler CON conductor</option>
+        <option  value="am">A-03 Aprendizaje conduccion</option>
+        <option  value="ca">A-04 Taxi</option>
+        <option  selected="selected"  value="bl"></option>
+    </select>
+
+    <label for="cocet">Codigo CET:</label>
+    <input type="text" id="cocet" name="codicet">
+
+    <label for="cocema">Codigo CEMA:</label>
+    <input type="text" id="cocema" name="codigocema">
+</fieldset>
+
+<fieldset>
+    <h2>NUEVO DOMICILIO DEL VEHICULO</h2>
+
+    <label for="tivia">Tipo de Via:</label>
+    <input type="text" id="tivia" name="tipovia">
+
+    <label for="nomvia">Nombre de la Via:</label>
+    <input type="text" id="nomvia" name="nombrevia">
+
+    <label for="numca">Numero:</label>
+    <input type="number" id="numca" name="numerocasa">
+
+    <label for="bloque">Bloque:</label>
+    <input type="text" id="bloque" name="bloque">
+
+    <label for="portal">Portal:</label>
+    <input type="text" id="portal" name="portal">
+
+    <label for="escalera">Escalera:</label>
+    <input type="text" id="escalera" name="escalera">
+
+    <label for="planta">Planta:</label>
+    <input type="text" id="planta" name="planta">
+
+    <label for="puerta">Puerta:</label>
+    <input type="text" id="puerta" name="puerta">
+
+    <label for="km">KM:</label>
+    <input type="number" id="km" name="km">
+
+    <label for="cp">Codigo Postal</label>:</label>
+    <input type="number" id="cp" name="codigopostal">
+
+    <label for="provincia">Provincia:</label>
+    <input type="text" id="provincia" name="provincia">
+
+    <label for="municipio">Municipio:</label>
+    <input type="text" id="municipio" name="municipio">
+
+    <label for="localidad">Localidad:</label>
+    <input type="text" id="localidad" name="localidad">
+</fieldset>
+
+<fieldset>
+    <h2>DATOS DEL COMPRADOR</h2>
+
+    <label for="pein">Persona Interesada</label>
+    <input type="radio" id="pein" name="datoscomprador" value="personainteresada">
+
+    <label for="comprav">Compraventa</label>
+    <input type="radio" id="comprav" name="datoscomprador" value="compraventa">
+
+    <label for="nifniecifcom">NIF/NIE/CIF:</label>
+    <input type="text" id="nifniecifcom" name="nifniecifcomprador">
+
+    <label for="fechacomprador">Fecha de nacimiento (dd/mm/aaaa):</label>
+    <input type="date" id="fechacomprador" name="fechacomprador">
+
+    <label for="razonso">Nombre/Razon Social:</label>
+    <input type="text" id="razonso" name="Nombre/razonsocial">
+
+    <label for="primerape">Primer Apellido:</label>
+    <input type="text" id="primerape" name="primerapellido">
+
+    <label for="segundoape">Segundo Apellido:</label>
+    <input type="text" id="segundoape" name="segundoapellido">
+
+    <label for="codiiae">Código IAE(Impuesto de actividades Económicas):</label>
+    <input type="text" id="codiiae" name="codiiae">
+
+    <label for="correocompra">Correo Electrónico</label>
+    <input type="email" id="correocompra" name="correocomprador">
+
+    <label for="telcompra">Teléfono:</label>
+    <input type="number" id="telcompra" name="telefonocomprador">
+
+<h2>Tutela:</h2>
+
+    <label for="menoedad">Menor de Edad</label>
+    <input type="radio" id="menoredad" name="tutela" value="MenorEdad">
+   
+    <label for="otroscausas">Otras Causas</label>
+    <input type="radio" id="otrascausas" name="tutela" value="otrascausas">
+
+    <label for="nomtutor">Nombre del Tutor:</label>
+    <input type="text" id="nomtutor" name="nombretutor">
+
+    </fieldset>
+
+    
+        
+<fieldset>
+      <h2>  DATOS DEL VENDEDOR/TRANSMISOR </h2>         
+        
+        
+        <label for="titularven">Titular</label>
+    <input type="radio" id="titularven" name="datosvendedor" value="titularvendedor">
+   
+    <label for="compoalq">Compraventa/Dueño/Arrendatario</label>
+    <input type="radio" id="compoalq" name="datosvendedor" value="compra/dueño/arren">
+      
+    <label for="dnivende">NIF/CIF/NIE:</label>
+    <input type="text" id="dnivende" name="dni/cif/nievende">
+
+    <label for="nomrazonvende">Nombre/Razón Social:</label>
+    <input type="text" id="nomrazonvende" name="nomrazonvendedor">
+
+    <label for="primerapevende">Primer Apellido:</label>
+    <input type="text" id="primerapevende" name="primerapevende">
+
+    <label for="segundoapevende">Segundo Apellido:</label>
+    <input type="text" id="segundoapevende" name="segundoapevende">
+</fieldset>
+        
+
+        <fieldset>
+
+            <h2>OTROS</h2>
+    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>      
+     
+             </fieldset>
+
+
+        <fieldset>
+
+           <p>Me Opongo a que la Dirección General de Tránsito consulte electrónicamente mis datos personales referidas en:</p>
+           
+           <label for="empadronamientoopo">Empadronamiento</label>
+           <input type="checkbox" id="empadronamientoopo" name="empadron" value="empadron">
+
+           <label for="iaeopo">IAE</label>
+           <input type="checkbox" id="iaeopo" name="iaeopo" value="iaeopo">
+
+           <label for="identidadopo">Identidad</label>
+           <input type="checkbox" id="identidadopo" name="identidadopo" value="identidadopo">
+           
+
+        </fieldset>
+   
+   
+
+
+
+
+
+
+
+
+</body>
+
+    </html>
